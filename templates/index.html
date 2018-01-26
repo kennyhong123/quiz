@@ -1,49 +1,41 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Quiz</title>
-		<link rel="stylesheet" type="text/css" href="design.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="script.js"></script>
-	</head>
-		<body>
-			<h1>Name these animals!</h1>
-			<p>
-				This quiz is testing your understanding of animals!
-			</p>
-			<h3>Quiz</h3>	
-				<img src="https://kennyhong123.github.io/quiz/static/img/panda.jpg" alt="Panda">
-				<br>
-				<button type="button" id="button1">Answer</button>
-				<div class="memes" id="memes1">
-				<p>Panda</p>
-				</div>
-				<br>
-				<img src="https://kennyhong123.github.io/quiz/static/img/lion.jpg" alt="Panda">
-				<br>
-				<button type="button" id="button2">Answer</button>
-				<div class="memes" id="memes2">
-				<p>Lion</p>
-				</div>
-				<br>
-				<img src="https://kennyhong123.github.io/quiz/static/img/turtle.jpg" alt="Panda">
-				<br>					<button type="button" id="button3">Answer</button>
-				<div class="memes" id="memes3">
-				<p>Cooter</p>
-				</div>
-				<br>
-				<img src="https://kennyhong123.github.io/quiz/static/img/zebra.jpg" alt="Panda">
-				<br>
-				<button type="button" id="button4">Answer</button>
-				<div class="memes" id="memes4">
-				<p>Zebra</p>
-				</div>
-				<br>
-				<img src="https://kennyhong123.github.io/quiz/static/img/bear.jpg" alt="Panda">
-				<br>
-				<button type="button" id="button5">Answer</button>
-				<div class="memes" id="memes5">
-				<p>Bear</p>
-				</div>
-		</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}	
+	
+	<h1>Name these animals!</h1>
+	<p>
+		This quiz is testing your understanding of animals!
+	</p>
+	<h3>Quiz</h3>	
+	<img src="https://kennyhong123.github.io/quiz/static/img/panda.jpg" alt="Panda">
+	<br>
+	<button type="button" id="button1">Answer</button>
+		<div class="memes" id="memes1">
+			<p>Panda</p>
+		</div>
+	<br>
+	<img src="https://kennyhong123.github.io/quiz/static/img/lion.jpg" alt="Panda">
+	<br>
+	<button type="button" id="button2">Answer</button>
+		<div class="memes" id="memes2">
+			<p>Lion</p>
+		</div>
+	<br>
+	<img src="https://kennyhong123.github.io/quiz/static/img/turtle.jpg" alt="Panda">
+	<br>					<button type="button" id="button3">Answer</button>
+		<div class="memes" id="memes3">
+			<p>Cooter</p>
+		</div>
+	<br>
+	<img src="https://kennyhong123.github.io/quiz/static/img/zebra.jpg" alt="Panda">
+	<br>
+	<button type="button" id="button4">Answer</button>
+		<div class="memes" id="memes4">
+			<p>Zebra</p>
+		</div>
+	<br>
+	<img src="https://kennyhong123.github.io/quiz/static/img/bear.jpg" alt="Panda">
+	<br>
+	<button type="button" id="button5">Answer</button>
+		<div class="memes" id="memes5">
+			<p>Bear</p>
+		</div>
