@@ -18,7 +18,6 @@ def renderScore():
     session['q2'] = request.form['a2']
     session['q3'] = request.form['a3']
     session['q4'] = request.form['a4']
-    session['q5'] = request.form['a5']
     return render_template('.html')
   
     
