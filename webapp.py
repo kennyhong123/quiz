@@ -21,7 +21,7 @@ def renderScore():
     session['q4'] = request.form['a4']
      if request.form['n1'] == "yes":
       session['score'] += 1
-    if request.form['n2'] == ""-:
+    if request.form['n2'] == "":
       session['score'] += 1
     if request.form['n3'] == "tuna":
       session['score'] += 1
