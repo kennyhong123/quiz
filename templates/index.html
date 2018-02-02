@@ -5,39 +5,52 @@
 	<p>
 		This quiz is testing your understanding of animals!
 	</p>
-	<h3>Quiz</h3>	
+	<h3>Quiz</h3>
+	<form action="/response">
 	<img src="https://kennyhong123.github.io/quiz/static/img/panda.jpg" alt="Panda">
 	<br>
-	<div>
-   	 <input type="radio" id="contactChoice1"
-    	 name="contact" value="Panda">
-	</div>
+		<div class="memes" id="memes">
+			<input type="radio" name="n1" value="panda">Panda
+			<input type="radio" name="n1" value="dog">Doggy
+			<input type="radio" name="n1" value="Shark">Shark
+			<input type="radio" name="n1" value="goose">Goose<br>
+		</div>
 	<br>
 	<img src="https://kennyhong123.github.io/quiz/static/img/lion.jpg" alt="Panda">
 	<br>
-	<button type="button" id="button2">Answer</button>
 		<div class="memes" id="memes2">
-			<p>Lion</p>
+			<input type="radio" name="n2" value="whale">Whale
+			<input type="radio" name="n2" value="rat">Rat
+			<input type="radio" name="n2" value="lion">Lion
+			<input type="radio" name="n2" value="goose">Goose<br>
 		</div>
 	<br>
 	<img src="https://kennyhong123.github.io/quiz/static/img/turtle.jpg" alt="Panda">
 	<br>					
-	<button type="button" id="button3">Answer</button>
 		<div class="memes" id="memes3">
-			<p>Cooter</p>
+			<input type="radio" name="n3" value="snake">Snake
+			<input type="radio" name="n3" value="turtle">Turtle
+			<input type="radio" name="n3" value="orange">Orange
+			<input type="radio" name="n3" value="goose">Goose<br>
 		</div>
 	<br>
 	<img src="https://kennyhong123.github.io/quiz/static/img/zebra.jpg" alt="Panda">
 	<br>
-	<button type="button" id="button4">Answer</button>
 		<div class="memes" id="memes4">
-			<p>Zebra</p>
+			<input type="radio" name="n4" value="zebra">Zebra
+			<input type="radio" name="n4" value="skunk">Skunk
+			<input type="radio" name="n4" value="Giraffe">Giraffe
+			<input type="radio" name="n4" value="goose">Goose<br>
 		</div>
 	<br>
-	<img src="https://kennyhong123.github.io/quiz/static/img/bear.jpg" alt="Panda">
+	<img src="https://kennyhong123.github.io/quiz/static/img/bear.jpg" alt="Bear">
 	<br>
-	<button type="button" id="button5">Answer</button>
 		<div class="memes" id="memes5">
-			<p>Bear</p>
+			<input type="radio" name="n5" value="bear">Bear
+			<input type="radio" name="n5" value="armadillo">Armadillo
+			<input type="radio" name="n5" value="francisco">Francisco
+			<input type="radio" name="n5" value="goose">Goose<br>
 		</div>
-{{ % endblock % }}
+		<input type="submit" name="Submit">
+	</form>
+{% endblock %}
