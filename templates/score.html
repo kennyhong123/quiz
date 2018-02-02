@@ -2,7 +2,10 @@
 {% block content %}
   <h1>Scores</h1>
   <p>
-    Score:
+    {% if 'n1' in session %} 
+      <b>Question 1 Answer:</b> {{ session['n1'] }}<br>
+      <b>Correct Answer:</b> Panda<br><br>
+    {% endif %}
   </p>
   <a href="/retake">Retake Quiz?</a>
 {% endblock %}

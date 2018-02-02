@@ -1,4 +1,3 @@
-
 import os
 from flask import Flask, url_for, render_template, request
 from flask import redirect
@@ -19,6 +18,7 @@ def renderBack():
 	
 @app.route('/response',methods=['GET','POST'])
 def renderScore():
+	session['n1'] = request.form['n1']
 	return render_template('score.html')
   
     
