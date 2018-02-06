@@ -2,25 +2,9 @@
 {% block content %}
   <h1>Scores</h1>
   <p>
-    {% if 'n1' in session %} 
-      <b>Question 1 Answer:</b> {{ session['n1'] }}<br>
-      <b>Correct Answer:</b> Panda<br><br>
-    {% endif %}
-     {% if 'n2' in session %} 
-      <b>Question 2 Answer:</b> {{ session['n3'] }}<br>
-      <b>Correct Answer:</b> Lion<br><br>
-    {% endif %}
-     {% if 'n3' in session %} 
-      <b>Question 3 Answer:</b> {{ session['n3'] }}<br>
-      <b>Correct Answer:</b> Turtle<br><br>
-    {% endif %}
-     {% if 'n4' in session %} 
-      <b>Question 4 Answer:</b> {{ session['n4'] }}<br>
-      <b>Correct Answer:</b> Zebra<br><br>
-    {% endif %}
-     {% if 'n5' in session %} 
-      <b>Question 5 Answer:</b> {{ session['n5'] }}<br>
-      <b>Correct Answer:</b> Bear<br><br>
+    {% if 'score' in session %} 
+      <b>Score:</b> {{ session['score'] }}<br>
+      <b>Global Highest Score:</b> {{ hscore }}<br><br>
     {% endif %}
   </p>
   <a href="/retake">Retake Quiz?</a>
